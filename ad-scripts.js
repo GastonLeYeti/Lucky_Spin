@@ -20,10 +20,8 @@ function choose(){
     if(go){
     var div = document.getElementById('roue'),
         deg = Math.round((Math.random() * 360) * 5),
-//        deg = (Math.round((Math.random() * 360) * 5)) % 30,
         deg_modulo = deg % 30,
         deg_final = deg - deg_modulo + 15;
-//        deg_final = deg + 15;
 
     div.style.webkitTransform = 'rotate('+deg_final+'deg)'; 
     div.style.transform       = 'rotate('+deg_final+'deg)'; 
